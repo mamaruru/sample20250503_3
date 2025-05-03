@@ -1,0 +1,10 @@
+CREATE TABLE public.user_entity
+(
+    id bigint NOT NULL GENERATED ALWAYS AS IDENTITY,
+    first_name character varying(100) NOT NULL,
+    last_name character varying(100) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+ALTER TABLE IF EXISTS public.user_entity
+    OWNER to postgres;

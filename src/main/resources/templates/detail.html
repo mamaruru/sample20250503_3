@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>ユーザー詳細</title></head>
+<body>
+<h1>ユーザー詳細</h1>
+<p>姓: <span th:text="${user.lastName}"></span></p>
+<p>名: <span th:text="${user.firstName}"></span></p>
+<a href="/users">一覧へ戻る</a>
+</body>
+</html>
